@@ -3,7 +3,7 @@ var ResponsiveController = function(page_container, iframe, breakpoints) {
     
     /* Default variables */
     var DEFAULT_PAGE_CONTAINER = "#base",
-        DEFAULT_IFRAME = "responsive_container",
+        DEFAULT_IFRAME = "#responsive_container",
         DEFAULT_BREAKPOINTS = {
             'xs' : 0,
             'sm' : 768,
@@ -13,7 +13,7 @@ var ResponsiveController = function(page_container, iframe, breakpoints) {
     
     /* Assign default options */
     var _page_container = (page_container) ? $(page_container) : $(DEFAULT_PAGE_CONTAINER);
-    var _iframe = (iframe_element) ? $(iframe_element) : $(DEFAULT_IFRAME_ELEMENT);
+    var _iframe = (iframe) ? $(iframe) : $(DEFAULT_IFRAME);
     var _breakpoints = (breakpoints) ? breakpoints : DEFAULT_BREAKPOINTS;
     
     this.testFunction = function() {
