@@ -1,0 +1,21 @@
+{
+  "name": "Lazy",
+  "version": "1.0.0",
+  "main": "dist/",
+  "ignore": [
+    "bower.json",
+    ".gitignore",
+    "README.md"
+  ],
+  "homepage": "https://github.com/orenyakobi/lazy",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.0",
+    "commit": "0f99874571cd194dbac68f767683c5a448d02858"
+  },
+  "_source": "git://github.com/orenyakobi/lazy.git",
+  "_target": "~1.0.0",
+  "_originalSource": "lazyloader",
+  "_direct": true
+}

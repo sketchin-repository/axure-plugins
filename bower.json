@@ -1,0 +1,24 @@
+{
+  "name": "Sketchin Axure Plugins",
+  "version": "0.1",
+  "homepage": "https://github.com/sketchin-repository/Axure-Plugins",
+  "authors": [
+    "Marco Pesani <marco.pesani@gmail.com>"
+  ],
+  "description": "Addons for rich Axure prototypes",
+  "keywords": [
+    "axure"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lazyloader": "~1.0.0"
+  }
+}
