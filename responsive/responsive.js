@@ -1,9 +1,9 @@
 /* Responsive class */
-var ResponsiveController = function(page_container, iframe_element, breakpoints) {
+var ResponsiveController = function(page_container, iframe, breakpoints) {
     
     /* Default variables */
-    var DEFAULT_PAGE_CONTAINER = "main",
-        DEFAULT_IFRAME_ELEMENT = "responsive_container",
+    var DEFAULT_PAGE_CONTAINER = "#base",
+        DEFAULT_IFRAME = "responsive_container",
         DEFAULT_BREAKPOINTS = {
             'xs' : 0,
             'sm' : 768,
@@ -12,13 +12,14 @@ var ResponsiveController = function(page_container, iframe_element, breakpoints)
         }
     
     /* Assign default options */
-    var _options = {};
-    _options.page_container = (page_container) ? page_container : DEFAULT_PAGE_CONTAINER;
-    _options.page_container = (iframe_element) ? iframe_element : DEFAULT_IFRAME_ELEMENT;
-    _options.page_container = (breakpoints) ? breakpoints : DEFAULT_BREAKPOINTS;
+    var _page_container = (page_container) ? $(page_container) : $(DEFAULT_PAGE_CONTAINER);
+    var _iframe = (iframe_element) ? $(iframe_element) : $(DEFAULT_IFRAME_ELEMENT);
+    var _breakpoints = (breakpoints) ? breakpoints : DEFAULT_BREAKPOINTS;
     
     this.testFunction = function() {
-        console.log(_options);
+        console.log(_page_container);
+        console.log(_iframe);
+        console.log(_breakpoints);
     }
     
     return this;
